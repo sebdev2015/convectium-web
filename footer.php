@@ -17,12 +17,12 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'convectium' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'convectium' ), 'WordPress' );
+				/*printf( esc_html__( 'Proudly powered by %s', 'convectium' ), 'WordPress' );*/
 			?></a>
-			<span class="sep"> | </span>
+			<span class="sep" style="text-align:center; display:block;"> CONVECTIUM &copy;</span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'convectium' ), 'convectium', '<a href="http://underscores.me/">Underscores.me</a>' );
+				/*printf( esc_html__( 'Theme: %1$s by %2$s.', 'convectium' ), 'convectium', '<a href="http://underscores.me/">Underscores.me</a>' );*/
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

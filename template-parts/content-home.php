@@ -21,12 +21,12 @@ get_header(); ?>
                                behind the <span style="color:#43A74C;">best delivery systems</span> in cannabis.</h2>
 <hr>
           <h5 style="font-weight:bold; text-transform:uppercase; margin-bottom:60px;">We don’t touch plants, we help grow the companies that do!</h5>
-         <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">SCHEDULE A CONSULTATION</a> -->
+       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">SCHEDULE A CONSULTATION</a>
         </div>
       </div>
     </header>
 
-    <section class="bg-primary" id="about">
+<!--<section class="bg-primary" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -39,50 +39,17 @@ get_header(); ?>
       </div>
     </section>
 
+-->
+
     <section id="services">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
-            <hr class="primary">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-              <h3>Sturdy Templates</h3>
-              <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-              <h3>Ready to Ship</h3>
-              <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-              <h3>Up to Date</h3>
-              <p class="text-muted">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-              <h3>Made with Love</h3>
-              <p class="text-muted">You have to make your websites with love these days!</p>
-            </div>
-          </div>
+        <iframe src="https://player.vimeo.com/video/233275339" style="display:block;margin:0 auto;" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       </div>
     </section>
 
-  <!--  <section class="p-0" id="portfolio">
+ <section class="p-0" id="portfolio">
       <div class="container-fluid">
         <div class="row no-gutter popup-gallery">
           <div class="col-lg-4 col-sm-6">
@@ -178,7 +145,7 @@ get_header(); ?>
         </div>
       </div>
     </section>
-    -->
+
 
     <div class="call-to-action bg-dark">
       <div class="container text-center">
@@ -192,13 +159,13 @@ get_header(); ?>
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">Let's Get In Touch!</h2>
             <hr class="primary">
-            <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <p>Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x sr-contact"></i>
-            <p>800-605-3580</p>
+            <p><a href="tel:1-800-605-3580">800-605-3580</a></p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x sr-contact"></i>
