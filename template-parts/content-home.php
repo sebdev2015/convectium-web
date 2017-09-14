@@ -102,7 +102,7 @@ get_header(); ?>
 
 
 
-    <div class="call-to-action">
+    <div class="ncia-bg call-to-action">
       <div class="container text-center">
         <div class="row">
 
@@ -271,7 +271,7 @@ get_header(); ?>
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Mark.png" class="img-fluid img-center" />
                <span class="staff-name">Mark Adams</span>
-                <span class="company-title">Founder</span>
+
                 <span class="company-title">Managing Partner</span>
             </div>
 
@@ -300,34 +300,34 @@ get_header(); ?>
            <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Armando.png" class="img-fluid img-center" />
                 <span class="staff-name">Armando Collazo</span>
-               <span class="company-title">Business Developer</span>
+               <span class="company-title">Business Development</span>
             </div>
 
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Sergio.png" class="img-fluid img-center" />
                 <span class="staff-name">Sergio Castro</span>
-                <span class="company-title">Business Developer</span>
+                <span class="company-title">Business Development</span>
             </div>
 
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
              <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Parker.png" class="img-fluid img-center" />
                 <span class="staff-name">PARKER SCHAMUN</span>
-                     <span class="company-title">Business Developer</span>
+                     <span class="company-title">Business Development</span>
             </div>
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Caleb.png" class="img-fluid img-center" />
                <span class="staff-name">CALEB HAMILTON</span>
-                <span class="company-title">Business Developer</span>
+                <span class="company-title">Business Development</span>
             </div>
 
               <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                    <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Jon.png" class="img-fluid img-center" />
                     <span class="staff-name">JON LIRA</span>
 
-                    <span class="company-title">Customer Manager</span>
+                    <span class="company-title">Customer Realtions Manager</span>
                </div>
 
 
@@ -341,7 +341,8 @@ get_header(); ?>
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
            <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Open-Staff.png" class="img-fluid img-center" />
-                <span class="staff-name">...</span>
+                <span class="staff-name">Our Team Is Growing</span>
+                <span class="company-title"><a href="http://convectium.com/jobs">Apply Now</a> </span>
 
             </div>
 
@@ -376,23 +377,49 @@ get_header(); ?>
     <section id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
+          <div class="col-lg-8 mx-auto text-center page-h2-heading-container">
             <h2 class="section-heading">Let's Get In Touch!</h2>
-            <hr class="primary">
-            <p>Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <!--<hr class="primary">-->
+            <p>Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible! We love to help our clients find the right solution!</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x sr-contact"></i>
-            <p><a href="tel:1-800-605-3580">800-605-3580</a></p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-            <p>
-              <a href="mailto:info@convectium.com">info@convectium.com</a>
-            </p>
-          </div>
+
+
+         <div class="col-md-6  ml-auto text-center">
+            <?php echo do_shortcode( '[contact-form-7 id="14411" title="Contact form 1"]' ); ?>
+         </div>
+
+
+
+        <div class="col-md-6 c-contact-info mr-auto text-center">
+            <div class=" text-center">
+                <i class="fa fa-phone fa-3x sr-contact"></i>
+                <p>
+                    <a href="tel:1-800-605-3580">800-605-3580</a>
+                </p>
+            </div>
+               <hr class="primary">
+            <div class=" text-center">
+                <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                <p>
+                  <a href="mailto:info@convectium.com">info@convectium.com</a>
+                </p>
+            </div>
+    <hr class="primary">
+             <div class=" text-center">
+                                <i class="fa fa-map fa-3x" aria-hidden="true"></i>
+                            <p>
+                              <div><a href="https://www.google.com/maps/place/30191+Avenida+De+Las+Banderas,+Rancho+Santa+Margarita,+CA+92688/@33.6342682,-117.6056251,17z/data=!3m1!4b1!4m5!3m4!1s0x80dceba4123f4d27:0xe5866de83de693d1!8m2!3d33.6342682!4d-117.6034364" target="_blank">30191 Avenida De Las Banderas #B</br>
+                              <div>Rancho Santa Margarita, CA 92688</a></div>
+                            </p>
+                        </div>
+
+
+        </div>
+
+
+
         </div>
       </div>
     </section>

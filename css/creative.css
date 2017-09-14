@@ -23,9 +23,14 @@ a {
   color: #3fb64a;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  cursor: pointer!important;
+  z-index:1000;
+}
   a:focus, a:hover {
-    color: #3fb64a; }
+    color: #36c942;
+    cursor: pointer!important;
+  }
 
 h1,
 h2,
@@ -312,12 +317,12 @@ header.masthead {
   .btn-primary:hover {
     color: white;
     border-color: #3fb64a;
-    background-color: #43a74c; }
+    background-color: #389143; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
     border-color: #3fb64a;
-    background-color: #3fb64a; }
+    background-color: #389143; }
     .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover,
     .open > .btn-primary.dropdown-toggle.focus,
     .open > .btn-primary.dropdown-toggle:focus,
@@ -596,6 +601,7 @@ max-width:622px;
   display:block;
   text-align: left;
   margin-bottom:5px;
+  font-weight:bold;
 }
 
 #convectium-blog p{
@@ -622,12 +628,183 @@ max-width:622px;
 
 
 
-
-@media (min-width:320px) {
-  .vert-offset-top-6{
-    margin-top:2em;
+/*MOBILE*/
+@media (max-width:576px) {
+  .vert-offset-top-6 {
+    margin-top: 2em;
   }
+
+  #homeHeading{
+    font-size:1.5em;
+  }
+
+  .c-mobile-ul{
+    display:block;
+  }
+
+  #convectium-blog h3{
+    min-height:auto!important;
+  }
+
+  header.masthead .header-content {
+    position: relative;
+    width: 100%;
+    padding: 150px 15px 40px;
+    text-align: center;
+  }
+
 }
 
+
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+  #convectium-blog h3,#convectium-blog p{
+    min-height:auto!important;
+  }
+
+  .vert-offset-top-6{
+    margin:2em 0 0 0;
+  }
+
+
+
+}
+
+
+/*CONTACT FORM 7 LOCAL STYLES*/
+
+
+#wpcf7-f27-o1 div{
+  font-weight:bold;
+  color: #525252;
+  width:80%!important;
+  margin:0 auto 20px auto!important;
+
+}
+
+
+
+#wpcf7-f27-o1 input{
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:2px solid #ccc;
+  width:100%!important;
+  cursor: pointer;
+}
+
+
+#wpcf7-f27-o1 .how-can-we-help{
+  margin-bottom:20px;
+  display:inline-block;
+}
+
+
+#wpcf7-f27-o1 textarea{
+  border-left:0;
+  border-right:0;
+  border-top:0;
+  border-bottom:2px solid #ccc;
+  width:100%;
+}
+
+#wpcf7-f27-o1 select{
+  width:100%;
+  background: transparent;
+  -webkit-border-radius: 0!important;
+  -moz-border-radius: 0!important;
+  border-radius: 0!important;
+  border-left:0;
+  border-right:0;
+  border-top:0;
+  border-bottom: 2px solid #ccc;
+}
+
+.c-contact-info a{
+  font-size:18px;
+  font-weight:bold;
+}
+
+
+.wpcf7-submit{
+  background-color:#43a74c;
+  color:#fff;
+  border-bottom:0!important;
+  padding:10px 20px;
+  text-transform: uppercase;
+  font-weight:bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+}
+
+/*LIVE STYLES*/
+
+#wpcf7-f14411-o1 div{
+  font-weight:bold;
+  color: #525252;
+  width:80%!important;
+  margin:0 auto 20px auto!important;
+
+}
+
+
+
+#wpcf7-f14411-o1 input{
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:2px solid #ccc;
+  width:100%!important;
+  cursor: pointer;
+}
+
+
+#wpcf7-f14411-o1 .how-can-we-help{
+  margin-bottom:20px;
+  display:inline-block;
+}
+
+
+#wpcf7-f14411-o1 textarea{
+  border-left:0;
+  border-right:0;
+  border-top:0;
+  border-bottom:2px solid #ccc;
+  width:100%;
+}
+
+#wpcf7-f14411-o1 select{
+  width:100%;
+  background: transparent;
+  -webkit-border-radius: 0!important;
+  -moz-border-radius: 0!important;
+  border-radius: 0!important;
+  border-left:0;
+  border-right:0;
+  border-top:0;
+  border-bottom: 2px solid #ccc;
+}
+
+.c-contact-info a{
+  font-size:18px;
+  font-weight:bold;
+}
+
+
+.wpcf7-submit{
+  background-color:#43a74c;
+  color:#fff;
+  border-bottom:0!important;
+  padding:10px 20px;
+  text-transform: uppercase;
+  font-weight:bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+}
 
 
