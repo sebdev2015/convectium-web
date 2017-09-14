@@ -51,10 +51,13 @@ p {
   color: rgba(255, 255, 255, 0.7); }
 
 section {
-  padding: 100px 0; }
+  padding: 100px 0 100px 0; }
 
 .section-heading {
-  margin-top: 0; }
+  margin-top: 0!important;
+  font-weight:bold!important;
+font-size:2rem!important;
+text-transform:uppercase;}
 
 ::-moz-selection {
   color: white;
@@ -192,7 +195,9 @@ header.masthead {
             font-size: 18px;
             max-width: 80%;
             margin-right: auto;
-            margin-left: auto; } }
+            margin-left: auto; }
+    }
+
 
 .service-box {
   max-width: 400px;
@@ -337,8 +342,292 @@ header.masthead {
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  border-radius: 300px;
+  border-radius: 5px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 .btn-xl {
   padding: 15px 30px; }
+
+
+
+
+/*BOOTSTRAP VERT GRID*/
+
+/*
+Include this after bootstrap.css. Add class of
+vert-offset-top-value or vert-offset-bottom-value
+to your Bootstrap 3 default rows to prevent row content
+from touching the row content above or below.
+*/
+
+/* Vertical Offset Bottom */
+.vert-offset-top-12{
+  margin-top: 12em;
+}
+.vert-offset-top-11{
+  margin-top: 11em;
+}
+.vert-offset-top-10{
+  margin-top: 10em;
+}
+.vert-offset-top-9{
+  margin-top: 9em;
+}
+.vert-offset-top-8{
+  margin-top: 8em;
+}
+.vert-offset-top-7 {
+  margin-top: 7em;
+}
+.vert-offset-top-6{
+  margin-top: 6em;
+}
+.vert-offset-top-5{
+  margin-top: 5em;
+}
+.vert-offset-top-4{
+  margin-top: 4em;
+}
+.vert-offset-top-3{
+  margin-top: 3em;
+}
+.vert-offset-top-2{
+  margin-top: 2em;
+}
+.vert-offset-top-1{
+  margin-top: 1em;
+}
+.vert-offset-top-0{
+  margin-top: 0em;
+}
+/* Vertical Offset Bottom */
+.vert-offset-bottom-12{
+  margin-bottom: 12em;
+}
+.vert-offset-bottom-11{
+  margin-bottom: 11em;
+}
+.vert-offset-bottom-10{
+  margin-bottom: 10em;
+}
+.vert-offset-bottom-9{
+  margin-bottom: 9em;
+}
+.vert-offset-bottom-8{
+  margin-bottom: 8em;
+}
+.vert-offset-bottom-7{
+  margin-bottom: 7em;
+}
+.vert-offset-bottom-6{
+  margin-bottom: 6em;
+}
+.vert-offset-bottom-5{
+  margin-bottom: 5em;
+}
+.vert-offset-bottom-4{
+  margin-bottom: 4em;
+}
+.vert-offset-bottom-3{
+  margin-bottom: 3em;
+}
+.vert-offset-bottom-2{
+  margin-bottom: 2em;
+}
+.vert-offset-bottom-1{
+  margin-bottom: 1em;
+}
+.vert-offset-bottom-0{
+  margin-bottom: 0em;
+}
+
+/*
+###################################
+CUSTOM CSS
+###################################
+*/
+
+/*HIDE THEME ITEMS*/
+#portfolio,#about{
+  display:none;
+}
+
+
+/*PAGE STYLES*/
+
+.page-h2-heading-container{
+  margin-bottom:50px;
+}
+
+.page-h3-heading{
+  font-weight:bold;
+  text-transform: uppercase;
+  color:#43A74C;
+}
+
+.page-h5-sub-heading{
+
+}
+
+
+/*SERVICE SECTION*/
+#convectium-services{
+
+}
+
+#services{
+
+}
+
+
+/*NEWSLETTER SECTION*/
+#newsletter-section #mc_embed_signup{
+max-width:622px;
+}
+
+#mc_embed_signup .mc-field-group input{
+  border-radius:0;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  background:transparent;
+  color:#fff;
+}
+
+#mc_embed_signup .mc-field-group select{
+  border-radius:0;
+  border:0;
+  outline:none;
+  background:none;
+  -webkit-appearance: none;
+  -moz-appearance:    none;
+  appearance:         none;
+  -webkit-border-radius: 0;  /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -moz-border-radius: 0;  /* Firefox 1-3.6 */
+  border-radius: 0;  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-bottom:2px solid #ABB0B2;
+  color:#fff;
+}
+
+#mc_embed_signup .indicates-required{
+  color:#fff;
+}
+
+#newsletter-section{
+  background:#252525;
+
+}
+
+
+#mc_embed_signup form{
+  background:#252525!important;
+
+}
+#mc_embed_signup h2{
+  color:#43a74c;
+}
+
+#mc_embed_signup .mc-field-group label{
+  color:#43a74c;
+  font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+
+#mainNav.navbar-shrink{
+  border-bottom: 2px solid #43a74c;
+}
+
+
+
+/*Staff Section*/
+#convectium-staff{
+  background:#252525;
+}
+
+#convectium-staff span{
+  display:block;
+  text-align: center;
+  font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+#convectium-staff .staff-name{
+
+  font-size:16px;
+  color:#3fb64a;
+  margin-top:10px;
+  text-transform: uppercase;
+  font-weight:bold;
+
+}
+
+#convectium-staff .company-title{
+  font-size:14px;
+  color:#fff;
+
+}
+
+#convectium-staff  .img-center{
+  display:block;
+  margin:0 auto;
+}
+
+#convectium-staff h2{
+  color:#43a74c;
+}
+
+#convectium-staff h5{
+  color:#fff;
+}
+
+
+
+/*BLOG*/
+#convectium-blog h3{
+  min-height:90px!important;
+  margin-bottom:20px;
+  color:#43a74c;
+}
+
+
+#convectium-blog .article-author, #convectium-blog .article-time-date{
+
+  display:block;
+  text-align: left;
+  margin-bottom:5px;
+}
+
+#convectium-blog p{
+  min-height:120px;
+}
+
+
+
+
+
+
+/*footer*/
+#convectium-footer{
+  background:#252525;
+}
+
+.nav-footer-heading{
+  color:#fff;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+@media (min-width:320px) {
+  .vert-offset-top-6{
+    margin-top:2em;
+  }
+}
+
+
+

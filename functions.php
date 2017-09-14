@@ -128,13 +128,20 @@ wp_enqueue_style('Font_Awesome');
 	wp_enqueue_script( 'convectium-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 
-	wp_enqueue_script( 'convectium-jQuery', get_template_directory_uri() . '/vendor/jquery/jquery.min.js', array(), '', true );
-	wp_enqueue_script( 'convectium-popper', get_template_directory_uri() . '/vendor/popper/popper.min.js', array(), '', true );
-	wp_enqueue_script( 'convectium-bootstrap', get_template_directory_uri() . '/vendor/bootstrap/js/bootstrap.min.js', array(), '', true );
 
+    wp_register_script( 'jQuery', 'https://code.jquery.com/jquery-3.1.1.min.js', null, null, true );
+    wp_enqueue_script('jQuery');
 
+    wp_register_script( 'cloudFlare', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', null, null, true );
+    wp_enqueue_script('cloudFlare');
+
+    wp_register_script( 'bootstrapcdn', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', null, null, true );
+    wp_enqueue_script('bootstrapcdn');
+
+    wp_enqueue_script( 'convectium-scroll-reveal', get_template_directory_uri() . '/vendor/scrollreveal/scrollreveal.min.js', array(), '', true );
+    wp_enqueue_script( 'convectium-popper', get_template_directory_uri() . '/vendor/popper/popper.min.js', array(), '', true );
 	wp_enqueue_script( 'convectium-easing', get_template_directory_uri() . '/vendor/jquery-easing/jquery.easing.min.js', array(), '', true );
-	wp_enqueue_script( 'convectium-scroll-reveal', get_template_directory_uri() . '/vendor/scrollreveal/scrollreveal.min.js', array(), '', true );
+
 	wp_enqueue_script( 'convectium-magnific-popup', get_template_directory_uri() . '/vendor/magnific-popup/jquery.magnific-popup.min.js', array(), '', true );
 
 	wp_enqueue_script( 'convectium-cretive', get_template_directory_uri() . '/js/creative.min.js', array(), '', true );

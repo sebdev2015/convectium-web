@@ -18,11 +18,14 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
 
-        <link href="<?php echo get_stylesheet_directory_uri(); ?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+       <link href="<?php echo get_stylesheet_directory_uri(); ?>/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
 
 	    <link href="<?php echo get_stylesheet_directory_uri(); ?>/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+       <!-- <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> -->
 
         <!-- Plugin CSS -->
         <link href="<?php echo get_stylesheet_directory_uri(); ?>/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -30,8 +33,8 @@
 
 <!-- Custom styles for this template -->
         <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/creative.css" rel="stylesheet">
-
-
+<!--MAIL CHIMP STYLE-->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 
 	<?php wp_head(); ?>
 </head>
@@ -45,9 +48,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#convectium-services">Services</a>
+             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">About Us</a>
+              <a class="nav-link js-scroll-trigger" href="#aboutus">About Us</a>
             </li>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#convectium-staff">Our Team</a>
+             </li>
 
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="24634e83-c16e-4ea0-9006-5f0a33344ff8" name="conv3137469639" url="http://convectium.com">
+        <fileTransfer host="convectium.com" port="22" rootFolder="/home/conv3137469639/html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

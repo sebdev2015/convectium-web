@@ -14,17 +14,60 @@
 
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'convectium' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				/*printf( esc_html__( 'Proudly powered by %s', 'convectium' ), 'WordPress' );*/
-			?></a>
-			<span class="sep" style="text-align:center; display:block;"> CONVECTIUM &copy;</span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				/*printf( esc_html__( 'Theme: %1$s by %2$s.', 'convectium' ), 'convectium', '<a href="http://underscores.me/">Underscores.me</a>' );*/
-			?>
-		</div><!-- .site-info -->
+
+
+
+
+
+<section style="padding:20px 0!important;" id="convectium-footer">
+
+
+
+    <div class="call-to-action">
+      <div class="container text-center">
+        <div class="row">
+
+            <div class="col-md-12">
+                <img style="width:300px" class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/convectium-logo.png"/>
+            </div>
+
+            <div class="col-md-12" class="convectium-footer-links">
+
+<h4 class="nav-footer-heading vert-offset-top-2">NAVIGATION</h4>
+                <ul class="nav justify-content-center ">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#page-top">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#convectium-services">SERVICES</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#aboutus">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#convectium-staff">STAFF</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+
+         </div>
+      </div>
+    </div>
+
+
+
+</section>
+
+
+
+
 	</footer><!-- #colophon -->
 
 
