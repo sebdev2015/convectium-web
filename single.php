@@ -9,8 +9,39 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+
+<header class="masthead">
+<div class="header-content">
+<div class="header-content-inner">
+
+
+        <?php if ( is_singular() ) :
+        the_title( '<h1 id="homeHeading" class="entry-title">', '</h1>' );
+        else :
+        the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+        endif; ?>
+
+
+        </div><!-- .entry-meta -->
+
+
+
+
+
+</div>
+</div>
+</header>
+
+
+
+
+
+SINGLE VIEW
+
+	<div id="primary" class="content-area container">
+	<div class="row">
+
+		<main id="main" class="site-main col-md-9">
 
 		<?php
 		while ( have_posts() ) : the_post();
@@ -25,11 +56,17 @@ get_header(); ?>
 			endif;
 
 		endwhile; // End of the loop.
+
+
 		?>
 
 		</main><!-- #main -->
+
+        <div class="col-md-3"><?php get_sidebar(); ?></div>
+
+    </div><!-- .row -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+
 get_footer();

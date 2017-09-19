@@ -14,19 +14,27 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 
-		<?php
-		if ( have_posts() ) :
+<header class="masthead">
+<div class="header-content">
+<div class="header-content-inner">
+<h2 id="homeHeading" style="font-weight:bold;">LATEST NEWS & EVENTS</h2>
+<hr>
+<h5 style="font-weight:bold; text-transform:uppercase; margin-bottom:60px;">GET THE LATEST NEWS ABOUT OUR PRODUCTS AND SERVICES</h5>
+</div>
+</div>
+</header>
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
 
-			<?php
-			endif;
+
+
+
+
+	<div id="primary" class="content-area container">
+	<div class="row">
+		<main id="main" class="site-main col-md-9">
+            ALL POSTS
+		<?php if ( have_posts() ) :
 
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
@@ -48,9 +56,15 @@ get_header(); ?>
 
 		endif; ?>
 
+
+
 		</main><!-- #main -->
+
+		<div class="col-md-3"><?php get_sidebar(); ?></div>
+
+		</div><!-- .row /-->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+
 get_footer();

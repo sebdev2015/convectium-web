@@ -147,7 +147,8 @@ body {
           color: #222222; }
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-            color: #43a74c; } }
+            color: #43a74c; }
+  }
 
 header.masthead {
   position: relative;
@@ -164,8 +165,14 @@ header.masthead {
   header.masthead .header-content {
     position: relative;
     width: 100%;
-    padding: 150px 15px 100px;
+    padding: 150px 15px 100px 15px;
     text-align: center; }
+
+  .blog header.masthead .header-content{
+    padding: 190px 15px 100px 15px;
+  }
+
+
     header.masthead .header-content .header-content-inner h1 {
       font-size: 30px;
       font-weight: 700;
@@ -190,6 +197,8 @@ header.masthead {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%); }
+
+
         header.masthead .header-content .header-content-inner {
           max-width: 1000px;
           margin-right: auto;
@@ -255,7 +264,15 @@ header.masthead {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
       font-size: 16px; }
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-      font-size: 22px; } }
+      font-size: 22px; }
+
+
+
+    .blog header.masthead .header-content{
+      top:60%;
+
+    }
+  }
 
 .call-to-action {
   padding: 50px 0; }
@@ -629,7 +646,7 @@ max-width:622px;
 
 
 /*MOBILE*/
-@media (max-width:576px) {
+@media (max-width:575px) {
   .vert-offset-top-6 {
     margin-top: 2em;
   }
@@ -649,9 +666,26 @@ max-width:622px;
   header.masthead .header-content {
     position: relative;
     width: 100%;
-    padding: 150px 15px 40px;
+    padding: 150px 15px 40px 15px!important;
     text-align: center;
   }
+
+  .blog header.masthead .header-content {
+    padding:140px 15px 40px 15px!important;
+  }
+
+  .blog header.masthead {
+    height:400px!important;
+  }
+
+  .single-post header.masthead .header-content {
+    padding:140px 15px 40px 15px!important;
+  }
+
+  .single-post header.masthead {
+    height:400px!important;
+  }
+
 
 }
 
@@ -668,7 +702,15 @@ max-width:622px;
   }
 
 
+  .single-post header.masthead{
+    height:400px!important;
+  }
 
+  .single-post header.masthead .header-content{
+    padding:250px 0;
+    top:62%;
+  }
+  
 }
 
 
@@ -807,4 +849,71 @@ max-width:622px;
 
 }
 
+/*BLOG STYLES*/
 
+
+.blog header.masthead {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+  color: white;
+  background-image: url("../img/convectium-page-BG.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.blog header.masthead {
+  padding:50px 15px 100px 15px!important;
+  height:450px;
+}
+
+
+.blog aside section{
+  padding:20px 5px;
+}
+
+.blog .entry-title a{
+  font-size:20px!important;
+  font-weight:bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.blog .entry-footer span{
+  display:block;
+}
+
+
+.blog article{
+  /*border-bottom:2px dotted #ccc;*/
+  padding:20px 5px;
+}
+
+
+/*SINGLE POST STYLE*/
+.single-post header.masthead {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  text-align: center;
+  color: white;
+  background-image: url("../img/convectium-page-BG.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.single-post header.masthead {
+  height:500px;
+}
+
+
+.single-post aside section{
+  padding:20px 5px;
+}
