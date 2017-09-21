@@ -47,19 +47,36 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#convectium-services">Services</a>
+          <ul class="navbar-nav ml-auto c-nav">
+           <li class="nav-item">
+             <!-- /*homepage condition*/ -->
+               <?php
+                if ( is_page('contact-us') || is_single()) {
+                    echo '<a class="nav-link js-scroll-trigger" href="/"><i class="fa fa-arrow-left" aria-hidden="true"></i> Home</a>';
+                } else { echo '<a class="nav-link js-scroll-trigger home" href="/#page-top">Home</a>';
+
+                }
+           ?>
              </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#aboutus">About Us</a>
+             <li class="nav-item hide-on-news">
+                <a class="nav-link js-scroll-trigger" href="/#convectium-services">Services</a>
+             </li>
+            <li class="nav-item hide-on-news ">
+              <a class="nav-link js-scroll-trigger" href="/#aboutus">About Us</a>
             </li>
-             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#convectium-staff">Our Team</a>
+            <li class="nav-item hide-on-news">
+                          <a class="nav-link js-scroll-trigger" href="/#convectium-blog">Latest News</a>
+                        </li>
+             <li class="nav-item hide-on-news">
+              <a class="nav-link js-scroll-trigger" href="/#convectium-staff">Our Team</a>
              </li>
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <li class="nav-item hide-on-news">
+              <a class="nav-link js-scroll-trigger" href="/#contact">Contact Us</a>
+            </li>
+
+            <li class="nav-item contact-us-blog hide-on-home hide-on-contact">
+                  <a class="nav-link js-scroll-trigger" href="/contact-us">Contact Us</a>
             </li>
           </ul>
         </div>

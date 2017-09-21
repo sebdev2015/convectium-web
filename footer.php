@@ -31,35 +31,35 @@
                 <a href="http://convectium.com"><img style="width:300px" class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/convectium-logo.png"/></a>
             </div>
 
-            <div class="col-md-12" class="convectium-footer-links">
+            <div class="col-md-12 c-nav-footer-1 convectium-footer-links">
 
 
             <h6 class="nav-footer-heading vert-offset-top-2">NAVIGATION</h6>
-                <ul class="nav c-mobile-ul c-navigation justify-content-center ">
+                <ul class="nav c-mobile-ul c-navigation  justify-content-center ">
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="http://convectium.com">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#convectium-services">SERVICES</a>
+                        <a class="nav-link js-scroll-trigger" href="/#convectium-services">SERVICES</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#aboutus">ABOUT US</a>
+                        <a class="nav-link js-scroll-trigger" href="/#aboutus">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#convectium-staff">STAFF</a>
+                        <a class="nav-link js-scroll-trigger" href="/#convectium-staff">STAFF</a>
                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#NEWS">LATEST NEWS</a>
+                     <li class="nav-item hide-on-news">
+                        <a class="nav-link js-scroll-trigger " href="/#convectium-blog">LATEST NEWS</a>
                      </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
+                        <a class="nav-link js-scroll-trigger" href="/#contact">CONTACT US</a>
                     </li>
                 </ul>
 
 
             </div>
 
-            <div class="col-md-12" class="convectium-footer-links">
+            <div class="col-md-12 convectium-footer-links">
 
                         <h6 class="nav-footer-heading vert-offset-top-2">FOLLOW US</h6>
                             <ul class="nav justify-content-center ">

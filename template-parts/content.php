@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-ALL ARTICLES
+
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -22,14 +22,16 @@ ALL ARTICLES
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php convectium_posted_on(); ?>
+			<!--<div>Published on <?php the_time( get_option('date_format') ); ?></div>-->
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+
 		<?php
-			the_content( sprintf(
+			 the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
 					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'convectium' ),
@@ -53,3 +55,5 @@ ALL ARTICLES
 		<?php convectium_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
+

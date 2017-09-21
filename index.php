@@ -32,8 +32,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area container">
 	<div class="row">
+
 		<main id="main" class="site-main col-md-9">
-            ALL POSTS
 		<?php if ( have_posts() ) :
 
 			/* Start the Loop */

@@ -13,5 +13,15 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+
+		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+		<section>
+    	<h2 class="widget-title">NAVIGATION</h2>
+    	<ul>
+    	<li><a href="/">Back to Convectium.com</a></li>
+    	<li><a href="/contact-us">Contact Us</a></li>
+    	</ul>
+    	</section>
+
+
 </aside><!-- #secondary -->

@@ -8,7 +8,7 @@
 * @package kultivatemedia
 */
 
-get_header(); ?>
+ define( 'WP_USE_THEMES', false ); get_header(); ?>
 
 
 
@@ -88,14 +88,28 @@ get_header(); ?>
 
 
 
+<section style="background:#000;" id="aboutus">
 
-    <section style="padding:0;" id="aboutus">
-      <div class="container-fluid">
-        <div class="row">
-        <iframe src="https://player.vimeo.com/video/233275339" style="display:block;margin:0 auto;" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="container-fluid">
+
+        <div class="page-h2-heading-container text-center">
+            <h2 class="section-heading" style="color:#34b03b;">ABOUT US</h2>
+            <h5 class="page-h5-sub-heading"> </h5>
         </div>
-      </div>
-    </section>
+
+        <div class="row ">
+                <!--<video  id="video-background" muted plays-inline>
+                    <source src="https://player.vimeo.com/external/233275339.hd.mp4?s=28d4961247cc99d4c5f0c53aeee546bbefd7f95b&profile_id=175" type="video/mp4">
+                </video> -->
+
+                <div class="videoWrapper">
+                    <iframe src="https://player.vimeo.com/video/233275339" frameborder="0" width="100%" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+        </div>
+
+    </div>
+
+</section>
 
 
 
@@ -167,7 +181,7 @@ get_header(); ?>
     		<div class="response" id="mce-success-response" style="display:none"></div>
     	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b44d95d226269bb59b398a9f6_47001285d4" tabindex="-1" value=""></div>
-        <div class="clear text-center"><input style="margin:0 auto; border:0; padding:10px 20px;" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-md "></div>
+        <div class="clear text-center"><input style="width: 64%; margin:0 auto; border:0; padding:10px 20px;" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-md "></div>
         </div>
     </form>
     </div>
@@ -196,41 +210,34 @@ get_header(); ?>
         <div class="row">
 
 
-            <div class=" col-lg-4">
-                <img src="" class="img-fluid" />
-                <h3 style="">Is cannabis too lucrative to be illegal?</h3>
-                <span class="article-author"> ED LEEFELDT</span>
-                <span class="article-time-date"> 8/9/2017 5:30 AM</span>
-                <p>The laws against marijuana can’t fight the free market, including the $100 billion in annual potential profits and the $28 billion states could reap in tax revenue. Most important, the many forms that marijuana can morph into make it a product that’s...</p>
-                <a class="btn btn-primary" href="http://www.cbsnews.com/news/is-cannabis-too-lucrative-to-be-illegal/">Read More</a>
-            </div>
 
-
-            <div class="col-lg-4">
-                <img src="" class="img-fluid" />
-                <h3>710Shark Oil Filling Machine – Named innovative product. </h3>
-                <span class="article-author">  FHM Editor </span>
-                <span class="article-time-date"> 8/7/2017 3:36 PM</span>
-                <p>If you haven’t taken notice, the cannabis industry has come a long way from what your college-self probably remembers it being — which was nearly nonexistent. Outside of that one kid in your dorm who scored pot from some random friend of his...</p>
-                <a class="btn btn-primary" href="http://www.fhm.com/posts/marijuana-news-newest-products-138727">Read More</a>
-            </div>
-
-
-
-            <div class=" col-lg-4">
-                <img src="" class="img-fluid" />
-                <h3>Marijuana Legalization is “Not a matter of if, it’s when”</h3>
-                <span class="article-author">  Tom & Deneen Borelli </span>
-                <span class="article-time-date"> 6/9/2017 3:36 PM</span>
-                <p>Danny Davis, CEO & Managing Partner of Convectium, speaks with Tom & Deneen Borelli about the legislation proposed by New Jersey Senator Cory Booker that would legalize marijuana on the federal level. Click the link below to Listen to the podcast...</p>
-                <a class="btn btn-primary" href="https://soundcloud.com/siriusxm-news-issues/marijuana-legalization-is-not-a-matter-of-if-this-will-be-approved-federally-its-when">Read More</a>
-            </div>
-
+<?php
+    $the_query = new WP_Query( 'cat=news' );
+    // The Loop
+    while ( $the_query->have_posts() ) : $the_query->the_post();
+    echo '<div class="col-lg-4 c-home-page-blog-query">';
+    echo the_post_thumbnail('post-thumbnail', array('class' => "img-fluid"));
+    echo '<a rel="' .get_permalink(). '" href="' .get_permalink(). ' "><h3>';
+    echo the_title();
+    echo '</a></h3>';
+    echo '<div class="posted-on-date-blog"><h6>';
+    echo convectium_posted_on();
+    echo '</h6></div>';
+    echo '<div class="c-home-post-time"><p>Posted at ';
+    echo get_the_time();
+    echo '</p></div>';
+    echo '<p class="c-home-post">';
+    echo get_excerpt(140, 'content');
+    echo'</p>';
+    echo '</div>';
+    endwhile;
+    // Reset Post Data
+    wp_reset_postdata();
+?>
 
         </div>
     </div>
 </section>
-
 
 
 
@@ -262,7 +269,7 @@ get_header(); ?>
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Danny.png" class="img-fluid img-center" />
-                <span class="staff-name">Danny Davis</span>
+                <a href="mailto:danny@convectium.com"><span class="staff-name">Danny Davis <i class="fa fa-envelope" aria-hidden="true"></i></span></a>
                 <span class="company-title">Founder</span>
                 <span class="company-title">Managing Director</span>
             </div>
@@ -270,62 +277,62 @@ get_header(); ?>
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Mark.png" class="img-fluid img-center" />
-               <span class="staff-name">Mark Adams</span>
+               <a href="mailto:mark@convectium.com"><span class="staff-name">Mark Adams <i class="fa fa-envelope" aria-hidden="true"></i></span></a>
 
                 <span class="company-title">Managing Partner</span>
             </div>
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Jeff.png" class="img-fluid img-center" />
-               <span class="staff-name">Jeff Brady</span>
+                <a href="mailto:jeff@convectium.com"><span class="staff-name">Jeff Brady <i class="fa fa-envelope" aria-hidden="true"></i></span></a>
                 <span class="company-title">Investor</span>
                 <span class="company-title">VP Sales</span>
             </div>
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Heather.png" class="img-fluid img-center" />
-                <span class="staff-name">Heather Wilson</span>
-                <span class="company-title">Shipping & Handling</span>
+                <a href="mailto:heather@convectium.com"><span class="staff-name">Heather Wilson <i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                <span class="company-title">Shipping & Logistics</span>
 
             </div>
 
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1 ">
             <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Malachi.png" class="img-fluid img-center" />
-                <span class="staff-name">Malachi Bodine</span>
+                <a href="mailto:malachi@convectium.com"><span class="staff-name">Malachi Bodine <i class="fa fa-envelope" aria-hidden="true"></i></span></a>
                 <span class="company-title">Project Manager</span>
 
             </div>
 
            <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Armando.png" class="img-fluid img-center" />
-                <span class="staff-name">Armando Collazo</span>
+                <a href="mailto:armando@convectium.com"><span class="staff-name">Armando Collazo <i class="fa fa-envelope" aria-hidden="true"></i></span></a>
                <span class="company-title">Business Development</span>
             </div>
 
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Sergio.png" class="img-fluid img-center" />
-                <span class="staff-name">Sergio Castro</span>
+                <a href="mailto:sergio@convectium.com"><span class="staff-name">Sergio Castro <i class="fa fa-envelope" aria-hidden="true"></i></span></a>
                 <span class="company-title">Business Development</span>
             </div>
 
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
              <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Parker.png" class="img-fluid img-center" />
-                <span class="staff-name">PARKER SCHAMUN</span>
+                <a href="mailto:parker@convectium.com"><span class="staff-name">PARKER SCHAMUN <i class="fa fa-envelope" aria-hidden="true"></i></span></a>
                      <span class="company-title">Business Development</span>
             </div>
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Caleb.png" class="img-fluid img-center" />
-               <span class="staff-name">CALEB HAMILTON</span>
+              <a href="mailto:caleb@convectium.com"> <span class="staff-name">CALEB HAMILTON <i class="fa fa-envelope" aria-hidden="true"></i></span></a>
                 <span class="company-title">Business Development</span>
             </div>
 
               <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
                    <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Jon.png" class="img-fluid img-center" />
-                    <span class="staff-name">JON LIRA</span>
+                  <a href="mailto:jon@convectium.com">  <span class="staff-name">JON LIRA <i class="fa fa-envelope" aria-hidden="true"></i></span></a>
 
                     <span class="company-title">Customer Realtions Manager</span>
                </div>
@@ -333,7 +340,7 @@ get_header(); ?>
 
             <div class="col-md-3 vert-offset-top-1 vert-offset-bottom-1">
              <img src="<?php echo get_template_directory_uri(); ?>/img/company-pics/Sebastian.png" class="img-fluid img-center" />
-                <span class="staff-name">Sebastian Alidad</span>
+              <a href="mailto:sebastian@convectium.com">  <span class="staff-name">Sebastian Alidad <i class="fa fa-envelope" aria-hidden="true"></i></span></a>
                 <span class="company-title">Web & Content Developer </span>
 
             </div>
@@ -408,12 +415,16 @@ get_header(); ?>
             </div>
     <hr class="primary">
              <div class=" text-center">
-                                <i class="fa fa-map fa-3x" aria-hidden="true"></i>
-                            <p>
-                              <div><a href="https://www.google.com/maps/place/30191+Avenida+De+Las+Banderas,+Rancho+Santa+Margarita,+CA+92688/@33.6342682,-117.6056251,17z/data=!3m1!4b1!4m5!3m4!1s0x80dceba4123f4d27:0xe5866de83de693d1!8m2!3d33.6342682!4d-117.6034364" target="_blank">30191 Avenida De Las Banderas #B</br>
-                              <div>Rancho Santa Margarita, CA 92688</a></div>
-                            </p>
-                        </div>
+                    <i class="fa fa-map fa-3x" aria-hidden="true"></i>
+
+                  <div style="margin-top:10px;"><a href="https://www.google.com/maps/place/30191+Avenida+De+Las+Banderas,+Rancho+Santa+Margarita,+CA+92688/@33.6342682,-117.6056251,17z/data=!3m1!4b1!4m5!3m4!1s0x80dceba4123f4d27:0xe5866de83de693d1!8m2!3d33.6342682!4d-117.6034364" target="_blank"><span style="font-size:15px;">CONVECTIUM USA </span><br/> 30191 Avenida De Las Banderas #B</br>
+                  Rancho Santa Margarita, CA 92688</a></div>
+
+                    <div style="margin-top:10px; font-size:14px!important;"><span style="font-size:15px;">CONVECTIUM CHINA </span><br/>1701 Rongchao Binhai Building #A, </br>
+                                    Haixiu Road 2021, Baoan District,<br/>
+                                    Shenzhen, China</div>
+
+            </div>
 
 
         </div>

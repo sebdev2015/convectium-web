@@ -171,7 +171,13 @@ header.masthead {
   .blog header.masthead .header-content{
     padding: 190px 15px 100px 15px;
   }
+  .single-post header.masthead .header-content{
+    padding: 250px 15px 250px 15px;
+  }
 
+  .page-template-content-contactUs header.masthead .header-content{
+    padding: 190px 15px 100px 15px;
+  }
 
     header.masthead .header-content .header-content-inner h1 {
       font-size: 30px;
@@ -271,6 +277,13 @@ header.masthead {
     .blog header.masthead .header-content{
       top:60%;
 
+    }
+    .single-post header.masthead .header-content{
+      top:60%;
+
+    }
+    .page-template-content-contactUs header.masthead .header-content{
+      top:60%;
     }
   }
 
@@ -607,9 +620,9 @@ max-width:622px;
 
 /*BLOG*/
 #convectium-blog h3{
-  min-height:90px!important;
-  margin-bottom:20px;
   color:#43a74c;
+  font-size:24px;
+  font-weight:bold;
 }
 
 
@@ -621,9 +634,9 @@ max-width:622px;
   font-weight:bold;
 }
 
-#convectium-blog p{
-  min-height:120px;
-}
+/*#convectium-blog p{*/
+  /*min-height:120px;*/
+/*}*/
 
 
 
@@ -679,10 +692,18 @@ max-width:622px;
   }
 
   .single-post header.masthead .header-content {
-    padding:140px 15px 40px 15px!important;
+    padding:250px 15px 40px 15px!important;
   }
 
   .single-post header.masthead {
+    height:400px!important;
+  }
+
+  .page-template-content-contactUs header.masthead .header-content{
+    padding:140px 15px 40px 15px!important;
+  }
+
+  .page-template-content-contactUs header.masthead{
     height:400px!important;
   }
 
@@ -702,15 +723,7 @@ max-width:622px;
   }
 
 
-  .single-post header.masthead{
-    height:400px!important;
-  }
 
-  .single-post header.masthead .header-content{
-    padding:250px 0;
-    top:62%;
-  }
-  
 }
 
 
@@ -849,7 +862,12 @@ max-width:622px;
 
 }
 
-/*BLOG STYLES*/
+/*HOME STYLEs*/
+.home .hide-on-home{
+  display:none;
+}
+
+  /*BLOG STYLES*/
 
 
 .blog header.masthead {
@@ -870,26 +888,62 @@ max-width:622px;
   height:450px;
 }
 
+.single-post header.masthead{
+  height:450px;
+}
 
-.blog aside section{
-  padding:20px 5px;
+
+.blog aside section, .single-post aside section{
+  padding:10px 5px;
 }
 
 .blog .entry-title a{
-  font-size:20px!important;
+  font-size:26px!important;
   font-weight:bold;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.blog .entry-footer span{
-  display:block;
+/*.blog .entry-footer span{*/
+  /*display:block;*/
+/*}*/
+
+.single-post article .entry-meta, .blog article .entry-meta{
+  width: auto;
+  display: inline-block;
+  background: #262626;
+  padding: 3px 8px;
+  color: #fff;
+}
+
+
+
+.single-post .entry-title{
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 
 .blog article{
   /*border-bottom:2px dotted #ccc;*/
-  padding:20px 5px;
+  /*padding: 20px 5px;*/
+}
+
+.blog .widget-title,.single-post .widget-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.blog .cat-links, .blog .comments-link{
+  display:none;
+}
+
+.single-post .comment-form-comment label{
+  display:block;
+  text-transform: uppercase;
+  font-weight:bold;
 }
 
 
@@ -908,12 +962,173 @@ max-width:622px;
   background-size: cover;
 }
 
+.blog .content-area, .single-post .content-area{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
-.single-post header.masthead {
-  height:500px;
+.blog .widget-area section ul, .single-post .widget-area section ul{
+  padding-left: 6px;
+
 }
 
 
-.single-post aside section{
-  padding:20px 5px;
+.blog .widget-area section ul li, .single-post .widget-area section ul li{
+  text-decoration: none;
+  list-style: none;
+}
+
+
+.single-post #main nav h2, .single-post #main #comments h3{
+font-weight:bold;
+  font-size:18px;
+  text-transform: uppercase;
+}
+
+
+.single-post #main #comments,.single-post #main nav {
+  margin:30px 0;
+}
+
+
+.single-post .entry-content{
+  margin-top:20px;
+}
+
+/*SEARCH STYLE*/
+.search-form .screen-reader-text{
+  display: none;
+}
+
+.search-form input, .search-form label{
+  display:block;
+  width:100%;
+}
+
+.search-form .search-submit{
+  background:#43A74C;
+  border:none;
+  color:#fff;
+  text-transform:uppercase;
+  font-weight:bold;
+  padding: 8px 10px;
+}
+
+.search-form .search-field{
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:2px solid #ccc;
+}
+
+.single-post .form-submit #submit{
+  background:#43A74C;
+  border:none;
+  color:#fff;
+  text-transform:uppercase;
+  font-weight:bold;
+  padding: 8px 10px;
+}
+
+.single-post  #comment{
+  border-left:0;
+  border-right:0;
+  border-top:0;
+  border-bottom:2px solid #ccc;
+}
+
+
+
+
+.single-post #convectium-footer .c-mobile-ul .hide-on-news,
+.blog #convectium-footer .c-mobile-ul .hide-on-news,
+.single-post .c-nav .hide-on-news,
+.blog .c-nav .hide-on-news,
+.blog .c-nav-footer-1,
+.single-post .c-nav-footer-1,
+.page-template-content-contactUs .c-nav-footer-1,
+.page-template-content-contactUs .c-nav .hide-on-news{
+  display:none!important;
+}
+
+
+/*CONTACT US STYLES*/
+
+.page-template-content-contactUs header.masthead{
+position: relative;
+width: 100%;
+min-height: auto;
+text-align: center;
+color: white;
+background-image: url("../img/convectium-page-BG.jpg");
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.page-template-content-contactUs header.masthead{
+  padding:50px 15px 100px 15px!important;
+  height:450px;
+}
+
+.page-template-content-contactUs .hide-on-contact{
+  display:none;
+}
+
+
+/*excerpt style home page*/
+.c-the-excerpt-button {
+  display:block;
+  margin-top:10px;
+}
+
+/*HOMEPAGE BLOG STYLE*/
+.c-home-page-blog-query p{
+  margin:0;
+}
+.c-home-page-blog-query h6{
+  margin:0;
+}
+
+.c-home-post-time{
+  margin-bottom:7px;
+}
+
+/*FULL SCREEN VIDEO*/
+
+/* The only rule that matters */
+#video-background {
+  /*  making the video fullscreen  */
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 400px;
+  z-index: -100;
+}
+
+
+
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 40.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  min-width:100%;
+  background:#000;
+  margin:0 auto;
+  display:block;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+  max-width:100%;
 }
