@@ -3,29 +3,53 @@
 
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  // $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  //     var target = $(this.hash);
+  //     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+  //     if (target.length) {
+  //       $('html, body').animate({
+  //         scrollTop: (target.offset().top - 200)
+  //       }, 1000, "easeInOutExpo");
+  //       return false;
+  //     }
+  //   }
+  // });
+
+$('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 48)
-        }, 1000, "easeInOutExpo");
+          scrollTop: target.offset().top - 90 }, 1000);
         return false;
-      }
-    }
-  });
+        }
+  }
+
+});
+
+
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
   });
 
+
+
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 48
+    offset: 90
   });
+
+
+
+
+
 
   // Collapse the navbar when page is scrolled
   $(window).scroll(function() {
@@ -35,6 +59,10 @@
       $("#mainNav").removeClass("navbar-shrink");
     }
   });
+
+
+
+
 
   // Scroll reveal calls
   window.sr = ScrollReveal();
@@ -52,6 +80,9 @@
     scale: 0.3,
     distance: '0px'
   }, 300);
+
+
+
 
   // Magnific popup calls
   $('.popup-gallery').magnificPopup({
@@ -115,7 +146,22 @@
 // Kick off one resize to fix all videos on page load
     }).resize();
 
-
-
-
 })(jQuery); // End of use strict
+
+
+
+$(window).on('load', function(){ 
+function goToByScroll(id){
+jQuery("html, body").animate({scrollTop: jQuery("#"+id).offset().top - 90 }, 1000);
+}
+if(window.location.hash != '') {
+goToByScroll(window.location.hash.substr(1));
+}
+
+});
+
+
+
+
+
+

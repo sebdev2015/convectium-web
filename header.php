@@ -51,32 +51,31 @@
            <li class="nav-item">
              <!-- /*homepage condition*/ -->
                <?php
-                if ( is_page('contact-us') || is_single()) {
+                if ( is_page('contact-us') || is_page('b2b-services') || is_page('b2c-services') || is_page('consultation') || is_single()) {
                     echo '<a class="nav-link js-scroll-trigger" href="/"><i class="fa fa-arrow-left" aria-hidden="true"></i> Home</a>';
                 } else { echo '<a class="nav-link js-scroll-trigger home" href="/#page-top">Home</a>';
-
                 }
            ?>
              </li>
-             <li class="nav-item hide-on-news">
+             <li class="nav-item hide-on-news hide-on-b2b hide-on-b2c hide-on-cons">
                 <a class="nav-link js-scroll-trigger" href="/#convectium-services">Services</a>
              </li>
-            <li class="nav-item hide-on-news ">
+            <li class="nav-item hide-on-news hide-on-b2b hide-on-b2c hide-on-cons">
               <a class="nav-link js-scroll-trigger" href="/#aboutus">About Us</a>
             </li>
-            <li class="nav-item hide-on-news">
-                          <a class="nav-link js-scroll-trigger" href="/#convectium-blog">Latest News</a>
-                        </li>
-             <li class="nav-item hide-on-news">
+            <li class="nav-item hide-on-news hide-on-b2b hide-on-b2c hide-on-cons">
+              <a class="nav-link js-scroll-trigger" href="/#convectium-blog">Latest News</a>
+            </li>
+             <li class="nav-item hide-on-news hide-on-b2b hide-on-b2c hide-on-cons">
               <a class="nav-link js-scroll-trigger" href="/#convectium-staff">Our Team</a>
              </li>
 
-            <li class="nav-item hide-on-news">
+            <li class="nav-item hide-on-news hide-on-b2b hide-on-b2c hide-on-cons">
               <a class="nav-link js-scroll-trigger" href="/#contact">Contact Us</a>
             </li>
 
-            <li class="nav-item contact-us-blog hide-on-home hide-on-contact">
-                  <a class="nav-link js-scroll-trigger" href="/contact-us">Contact Us</a>
+            <li class="nav-item contact-us-blog hide-on-home hide-on-contact hide-on-b2b hide-on-b2c hide-on-cons">
+              <a class="nav-link js-scroll-trigger" href="/contact-us">Contact Us</a>
             </li>
           </ul>
         </div>

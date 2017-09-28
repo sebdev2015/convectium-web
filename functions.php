@@ -129,7 +129,7 @@ wp_enqueue_style('Font_Awesome');
 
 
 
-    wp_register_script( 'jQuery', 'https://code.jquery.com/jquery-3.1.1.min.js', null, null, true );
+    wp_register_script( 'jQuery', 'https://code.jquery.com/jquery-3.2.1.min.js', null, null, true );
     wp_enqueue_script('jQuery');
 
     wp_register_script( 'cloudFlare', 'https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', null, null, true );

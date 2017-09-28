@@ -22,7 +22,7 @@
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php convectium_posted_on(); ?>
-			<!--<div>Published on <?php the_time( get_option('date_format') ); ?></div>-->
+
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>

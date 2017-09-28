@@ -176,6 +176,10 @@ header.masthead {
   }
 
   .page-template-content-contactUs header.masthead .header-content{
+    padding: 150px 15px 100px 15px;
+  }
+
+  .page-template-content-consultation header.masthead .header-content{
     padding: 190px 15px 100px 15px;
   }
 
@@ -285,6 +289,18 @@ header.masthead {
     .page-template-content-contactUs header.masthead .header-content{
       top:60%;
     }
+
+    .page-template-content-b2bpage header.masthead .header-content{
+      top:60%;
+    }
+
+    .page-template-content-b2cpage header.masthead .header-content{
+      top:60%;
+    }
+    .page-template-content-consultation header.masthead .header-content{
+      top:60%;
+    }
+
   }
 
 .call-to-action {
@@ -492,6 +508,7 @@ CUSTOM CSS
 
 .page-h2-heading-container{
   margin-bottom:50px;
+  padding: 0 10px;
 }
 
 .page-h3-heading{
@@ -500,9 +517,6 @@ CUSTOM CSS
   color:#43A74C;
 }
 
-.page-h5-sub-heading{
-
-}
 
 
 /*SERVICE SECTION*/
@@ -686,7 +700,6 @@ max-width:622px;
   .blog header.masthead .header-content {
     padding:140px 15px 40px 15px!important;
   }
-
   .blog header.masthead {
     height:400px!important;
   }
@@ -694,19 +707,41 @@ max-width:622px;
   .single-post header.masthead .header-content {
     padding:250px 15px 40px 15px!important;
   }
-
   .single-post header.masthead {
     height:400px!important;
   }
 
   .page-template-content-contactUs header.masthead .header-content{
-    padding:140px 15px 40px 15px!important;
+    padding:90px 15px 40px 15px!important;
   }
-
   .page-template-content-contactUs header.masthead{
     height:400px!important;
   }
 
+  /*b2b - b2c styles*/
+ .page-template-content-b2bpage header.masthead .header-content {
+    padding:140px 15px 40px 15px!important;
+  }
+  .page-template-content-b2bpage header.masthead {
+    height:400px!important;
+  }
+
+  .page-template-content-b2cpage header.masthead .header-content {
+    padding:140px 15px 40px 15px!important;
+  }
+  .page-template-content-b2cpage header.masthead {
+    height:400px!important;
+  }
+
+  .page-template-content-consultation header.masthead {
+    height:400px!important;
+  }
+
+
+  /*Consultation Page*/
+  .page-template-content-consultation header.masthead .header-content {
+    padding:90px 15px 40px 15px!important;
+  }
 
 }
 
@@ -1077,6 +1112,13 @@ background-size: cover;
   display:none;
 }
 
+.page-template-content-b2bpage .hide-on-b2b,
+.page-template-content-b2cpage .hide-on-b2c,
+.page-template-content-consultation .hide-on-cons{
+  display:none;
+}
+
+
 
 /*excerpt style home page*/
 .c-the-excerpt-button {
@@ -1131,4 +1173,147 @@ background-size: cover;
   min-width: 100%;
   height: 100%;
   max-width:100%;
+}
+
+
+
+
+
+
+
+/*B2B Page Style, B2C Styles*/
+.page-template-content-b2bpage header.masthead{
+position: relative;
+width: 100%;
+min-height: auto;
+text-align: center;
+color: white;
+background-image: url("../img/convectium-page-BG.jpg");
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.page-template-content-b2bpage header.masthead{
+  padding: 50px 15px 100px 15px!important;
+  height: 450px;
+}
+
+/*b2c page*/
+.page-template-content-b2cpage header.masthead{
+position: relative;
+width: 100%;
+min-height: auto;
+text-align: center;
+color: white;
+background-image: url("../img/convectium-page-BG.jpg");
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.page-template-content-b2cpage header.masthead{
+  padding: 50px 15px 100px 15px!important;
+  height: 450px;
+}
+
+
+
+
+/*CONSULTATION PAGE STYLES*/
+
+.page-template-content-consultation header.masthead{
+position: relative;
+width: 100%;
+min-height: auto;
+text-align: center;
+color: white;
+background-image: url("../img/convectium-page-BG.jpg");
+background-position: center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.page-template-content-consultation header.masthead{
+  padding: 50px 15px 100px 15px!important;
+  height: 450px;
+}
+
+
+
+
+
+/*CONSULTING FORM*/
+
+
+#wpcf7-f93-o1 div{
+  font-weight:bold;
+  color: #525252;
+  width:80%!important;
+  margin:0 auto 20px auto!important;
+
+}
+
+
+
+#wpcf7-f93-o1 input{
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:2px solid #ccc;
+  width:100%!important;
+  cursor: pointer;
+}
+
+
+#wpcf7-f93-o1 .how-can-we-help{
+  margin-bottom:20px;
+  display:inline-block;
+}
+
+
+#wpcf7-f93-o1 textarea{
+  border-left:0;
+  border-right:0;
+  border-top:0;
+  border-bottom:2px solid #ccc;
+  width:100%;
+}
+
+#wpcf7-f93-o1 select{
+  width:100%;
+  background: transparent;
+  -webkit-border-radius: 0!important;
+  -moz-border-radius: 0!important;
+  border-radius: 0!important;
+  border-left:0;
+  border-right:0;
+  border-top:0;
+  border-bottom: 2px solid #ccc;
+}
+
+.c-contact-info a{
+  font-size:18px;
+  font-weight:bold;
+}
+
+
+.wpcf7-submit{
+  background-color:#43a74c;
+  color:#fff;
+  border-bottom:0!important;
+  padding:10px 20px;
+  text-transform: uppercase;
+  font-weight:bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+}
+
+.the-post-content{
+  margin-top:50px;
 }

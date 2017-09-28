@@ -17,11 +17,10 @@
         <div class="header-content-inner">
           <h5 style="font-weight:bold; text-transform:uppercase;">CUSTOM PRODUCTS AND SOLUTIONS <br>FOR THE CANNABIS INDUSTRY</h5>
           <img src="<?php echo get_template_directory_uri(); ?>/img/convectium-icon.png" style="display:block;margin:30px auto;width:100px;">
-          <h2 id="homeHeading" style="font-weight:bold;"><span style="color:#43A74C;">Convectium</span> provides the <span style="color:#43A74C;">tech infrastructure</span><br>
-                               behind the <span style="color:#43A74C;">best delivery systems</span> in cannabis.</h2>
-<hr>
+          <h2 id="homeHeading" style="font-weight:bold;"><span style="color:#43A74C;">Convectium</span> provides the <span style="color:#43A74C;">tech infrastructure</span><br> behind the <span style="color:#43A74C;"> best delivery systems </span> in cannabis.</h2>
+            <hr>
           <h5 style="font-weight:bold; text-transform:uppercase; margin-bottom:60px;">We don’t touch plants, we help grow the companies that do!</h5>
-       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">SCHEDULE A CONSULTATION</a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="/consultation">SCHEDULE A CONSULTATION</a>
         </div>
       </div>
     </header>
@@ -52,7 +51,7 @@
                     <div class="col-md-6 pull-md-6 vert-offset-top-1 vert-offset-bottom-1" style="margin-top:2.5em;margin-bottom:2.5em;">
                         <h3 class="page-h3-heading">Business Services</h3>
                         <p>Convectium is also the powerhouse behind EquipCanna.com, the custom products, design and marketing engine behind your cannabis company and also the sole distributor of the 710shark and the 710seal, the the fastest filling and sealing machines for cartridges and disposables on the market.</p>
-                        <a class="btn btn-primary btn-xl" href="">VIEW OUR B2B SERVICES</a>
+                        <a class="btn btn-primary btn-xl" href="/b2b-services">VIEW OUR B2B SERVICES</a>
                     </div>
 
 
@@ -72,7 +71,7 @@
                     <div class="col-md-6 vert-offset-top-1 vert-offset-bottom-1"  style="margin-top:2.5em;margin-bottom:2.5em;">
                          <h3 class="page-h3-heading">Retail Services</h3>
                          <p>Convectium has produced some of the best B2C products and companies on the market including products such as the Prem31r, Dry Herb 2.0, and the Disposable 2.0 under the brand BlackoutX.</p>
-                         <a class="btn btn-primary btn-xl" href="">VIEW OUR B2C SERVICES</a>
+                         <a class="btn btn-primary btn-xl" href="/b2c-services">VIEW OUR B2C SERVICES</a>
                     </div>
 
                 </div>
@@ -220,12 +219,12 @@
     echo '<a rel="' .get_permalink(). '" href="' .get_permalink(). ' "><h3>';
     echo the_title();
     echo '</a></h3>';
-    echo '<div class="posted-on-date-blog"><h6>';
+    echo '<div style="margin-bottom:10px;" class="posted-on-date-blog"><h6>';
     echo convectium_posted_on();
     echo '</h6></div>';
-    echo '<div class="c-home-post-time"><p>Posted at ';
-    echo get_the_time();
-    echo '</p></div>';
+    // echo '<div class="c-home-post-time"><p><i class="fa fa-clock-o" aria-hidden="true"></i> ';
+    //echo get_the_time();
+    // echo '</p></div>';
     echo '<p class="c-home-post">';
     echo get_excerpt(140, 'content');
     echo'</p>';
