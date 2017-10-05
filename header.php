@@ -42,7 +42,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/"><img style="width:180px;" class="img-responsive convectium-logo" src="<?php echo get_template_directory_uri(); ?>/img/convectium-logo.png"></a>
+        <a class="navbar-brand js-scroll-trigger" href="/"><img style="width:215px;" class="img-responsive convectium-logo" src="<?php echo get_template_directory_uri(); ?>/img/convectium-logo.png"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -64,7 +64,7 @@
               <a class="nav-link js-scroll-trigger" href="/#aboutus">About Us</a>
             </li>
             <li class="nav-item hide-on-news hide-on-b2b hide-on-b2c hide-on-cons">
-              <a class="nav-link js-scroll-trigger" href="/#convectium-blog">Latest News</a>
+              <a class="nav-link js-scroll-trigger" href="/#convectium-blog">Press & Media</a>
             </li>
              <li class="nav-item hide-on-news hide-on-b2b hide-on-b2c hide-on-cons">
               <a class="nav-link js-scroll-trigger" href="/#convectium-staff">Our Team</a>

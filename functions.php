@@ -229,14 +229,14 @@ add_filter( 'image_downsize', 'myprefix_image_downsize', 1, 3 );
 
 
 /* REMOVE duplicate DATES */
-function jl_remove_post_dates() {
-	add_filter('the_date', '__return_false');
-	add_filter('the_time', '__return_false');
-	/*add_filter('the_modified_date', '__return_false');*/
-	add_filter('get_the_date', '__return_false');
-	/*add_filter('get_the_time', '__return_true');*/
-	/*add_filter('get_the_modified_date', '__return_false');*/
-} add_action('loop_start', 'jl_remove_post_dates');
+//function jl_remove_post_dates() {
+//	add_filter('the_date', '__return_false');
+//	add_filter('the_time', '__return_false');
+//	add_filter('the_modified_date', '__return_true');
+//	add_filter('get_the_date', '__return_false');
+//	add_filter('get_the_time', '__return_true');
+//	add_filter('get_the_modified_date', '__return_false');
+//} add_action('loop_start', 'jl_remove_post_dates');
 
 
 
@@ -249,25 +249,54 @@ function get_excerpt($limit, $source = null){
     $excerpt = preg_replace(" (\[.*?\])",'',$excerpt);
     $excerpt = strip_shortcodes($excerpt);
     $excerpt = strip_tags($excerpt);
-    $excerpt = substr($excerpt, 140, $limit);
+    $excerpt = substr($excerpt, 0, $limit);
     $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
     $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
     $excerpt = $excerpt.'... <a class="btn btn-primary c-the-excerpt-button" href="'.get_permalink($post->ID).'">READ MORE</a>';
     return $excerpt;
 }
 
-//post feed excerpt
+////post feed excerpt
 function wpse_280633_break_text( $content ) {
     if ( is_main_query() && ! is_singular() ) {
-        $length = 1000;
+        $length = 500;
         if(strlen($content)<$length+10) return $content;//don't cut if too short
 
         $break_pos = strpos($content, ' ', $length);//find next space after desired length
         $visible = substr($content, 0, $break_pos);
-        $content = balanceTags($visible) . "... <a href='".get_permalink($post->ID)."'> READ MORE</a>";
+        $content = balanceTags($visible) . "... <a class='' style='display:block; margin-top:5px;' href='".get_permalink($post->ID)."'> READ MORE <i class='fa fa-external-link'></i></a>";
     }
 
     return $content;
 }
 add_filter( 'the_content', 'wpse_280633_break_text' );
 
+
+//TRUNCATE LONG POST TITLES
+//Check for main query
+
+//Check for is single page
+//Trunacte titles
+function custom_trim_my_title( $title ) {
+if ( strlen( $title ) >= 40 && is_main_query() && ! is_single() ) {
+$title = substr( $title, 0, 40 ) . '...';
+return $title;
+}
+return $title;
+}
+add_filter( 'the_title', 'custom_trim_my_title' );
+
+//LINK IMAGE POST
+/**
+ * Link all post thumbnails to the post permalink.
+ *
+ * @param string $html          Post thumbnail HTML.
+ * @param int    $post_id       Post ID.
+ * @param int    $post_image_id Post image ID.
+ * @return string Filtered post image HTML.
+ */
+//function wpdocs_post_image_html( $html, $post_id, $post_image_id ) {
+//    $html = '<a href="' . get_permalink( $post_id ) . '" alt="' . esc_attr( get_the_title( $post_id ) ) . '">' . $html . '</a>';
+//    return $html;
+//}
+//add_filter( 'post_thumbnail_html', 'wpdocs_post_image_html', 10, 3 );

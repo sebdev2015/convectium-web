@@ -38,8 +38,8 @@
 
 
                     <div class="col-md-4">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/company/BlackoutX.jpg">
-                        <p></p>
+                        <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/company/BlackOutX.jpg">
+                        <p>Premier vaping products for a great experience!</p>
                         <div class="text-center mx-auto"><a target="_blank" class=" " href="http://blackoutx.com/">Checkout BlackoutX</a></div>
                     </div>
 

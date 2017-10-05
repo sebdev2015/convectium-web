@@ -98,8 +98,8 @@
     </div>
 
 
-<div class="col-md-12" style="background:#000;">
- <h6 class="nav-footer-heading vert-offset-top-2" style="font-weight:bold; font-size:12px; color:#34b03b; margin:0 auto; padding:10px; text-align:center;">CONVECTIUM &copy; | Equipment | Packaging | Branding</h6>
+<div class="col-md-12 c-bottom-footer" style="background:#000;" >
+ <h6 class="nav-footer-heading vert-offset-top-2" style="font-weight:bold; font-size:12px; color:#34b03b; margin:0 auto; padding:10px; text-align:center;">CONVECTIUM &copy; | Technology | Infrastructure | Cannabis</h6>
 </div>
 
 

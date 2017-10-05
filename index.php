@@ -18,7 +18,7 @@ get_header(); ?>
 <header class="masthead">
 <div class="header-content">
 <div class="header-content-inner">
-<h2 id="homeHeading" style="font-weight:bold;">LATEST NEWS & EVENTS</h2>
+<h2 id="homeHeading" style="font-weight:bold;">PRESS & MEDIA</h2>
 <hr>
 <h5 style="font-weight:bold; text-transform:uppercase; margin-bottom:60px;">GET THE LATEST NEWS ABOUT OUR PRODUCTS AND SERVICES</h5>
 </div>
@@ -27,10 +27,20 @@ get_header(); ?>
 
 
 
-
+<div class="container-fluid">
+<h5 style="font-weight:bold; text-align:center; margin:40px auto 0 auto; color:#43a74c">AS SEEN IN</h5>
+<img class="img-fluid as-seen-desk" style="margin:0 auto; display:block; width:1200px;"  src="<?php echo get_template_directory_uri(); ?>/img/ASSEENIN.png">
+<img class="img-fluid as-seen-mobile" style="margin:0 auto; display:block;"  src="<?php echo get_template_directory_uri(); ?>/img/Mobile-AsSeen.png">
+</div>
 
 
 	<div id="primary" class="content-area container">
+
+
+
+
+
+
 	<div class="row">
 
 		<main id="main" class="site-main col-md-9">

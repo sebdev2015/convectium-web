@@ -35,19 +35,19 @@
 
 			<div class="row">
 				<div class="col-md-4">
-					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/b2c-logos/EquipCanna-logo.jpg">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/company/EquipCanna-logo.jpg">
 					<p>Solutions and products in post extraction for the cannabis industry.</p>
                     <div class="text-center mx-auto"><a target="_blank" class=" " href="https://equipcanna.com/">Checkout EquipCanna</a></div>
 				</div>
 
 				<div class="col-md-4">
-					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/b2c-logos/710Shark-logo.jpg">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/company/710Shark-logo.jpg">
 					<p>Oil Filling Machine for vape carts, disposables and more. </p>
                     <div class="text-center mx-auto"><a target="_blank" class=" " href="https://www.equipcanna.com/products/710-shark-oil-filling-machine?variant=18512968454">Checkout 710Shark Oil Filling Machine</a></div>
 				</div>
 
 				<div class="col-md-4">
-					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/b2c-logos/710Seal-logo.jpg">
+					<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/company/710Seal-logo.jpg">
 					<p>Sealing Machine for heat sealing products in blister packaging.</p>
                     <div class="text-center mx-auto"><a target="_blank" class=" " href="https://www.equipcanna.com/products/710-seal-machine?variant=18512968966">Checkout 710Seal Sealing Machine</a></div>
 				</div>

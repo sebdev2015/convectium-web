@@ -165,22 +165,22 @@ header.masthead {
   header.masthead .header-content {
     position: relative;
     width: 100%;
-    padding: 150px 15px 100px 15px;
+    padding: 260px 15px 100px 15px;
     text-align: center; }
 
   .blog header.masthead .header-content{
-    padding: 190px 15px 100px 15px;
+    padding: 190px 0px 100px 0px;
   }
   .single-post header.masthead .header-content{
-    padding: 250px 15px 250px 15px;
+    padding: 250px 0px 250px 0px;
   }
 
   .page-template-content-contactUs header.masthead .header-content{
-    padding: 150px 15px 100px 15px;
+    padding: 150px 0px 100px 0px;
   }
 
   .page-template-content-consultation header.masthead .header-content{
-    padding: 190px 15px 100px 15px;
+    padding: 190px 0px 100px 0px;
   }
 
     header.masthead .header-content .header-content-inner h1 {
@@ -202,7 +202,7 @@ header.masthead {
       min-height: 600px; }
       header.masthead .header-content {
         position: absolute;
-        top: 50%;
+        top: 55%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -227,6 +227,10 @@ header.masthead {
   max-width: 400px;
   margin: 50px auto 0; }
   @media (min-width: 992px) {
+
+    .as-seen-mobile{
+      display:none!important;
+    }
     .service-box {
       margin: 20px auto 0; } }
   .service-box p {
@@ -508,7 +512,6 @@ CUSTOM CSS
 
 .page-h2-heading-container{
   margin-bottom:50px;
-  padding: 0 10px;
 }
 
 .page-h3-heading{
@@ -570,6 +573,7 @@ max-width:622px;
 
 #mc_embed_signup form{
   background:#252525!important;
+padding:0!important;
 
 }
 #mc_embed_signup h2{
@@ -634,9 +638,10 @@ max-width:622px;
 
 /*BLOG*/
 #convectium-blog h3{
-  color:#43a74c;
-  font-size:24px;
-  font-weight:bold;
+  color: #43a74c;
+  font-size: 24px;
+  font-weight: bold;
+  min-height: 60px;
 }
 
 
@@ -693,8 +698,9 @@ max-width:622px;
   header.masthead .header-content {
     position: relative;
     width: 100%;
-    padding: 150px 15px 40px 15px!important;
+    padding: 168px 15px 40px 15px!important;
     text-align: center;
+
   }
 
   .blog header.masthead .header-content {
@@ -705,7 +711,7 @@ max-width:622px;
   }
 
   .single-post header.masthead .header-content {
-    padding:250px 15px 40px 15px!important;
+    padding:200px 15px 40px 15px!important;
   }
   .single-post header.masthead {
     height:400px!important;
@@ -743,6 +749,36 @@ max-width:622px;
     padding:90px 15px 40px 15px!important;
   }
 
+  #convectium-blog .c-home-page-blog-query h3{
+    display:block;
+    margin:20px 0 0 0;
+  }
+
+  .as-seen-desk{
+    display:none!important;
+  }
+.as-seen-mobile{
+  display:block!important;
+}
+
+  .blog .content-area{
+    margin:20px auto 50px 0!important;
+  }
+
+  .c-home-page-blog-query{
+    margin-bottom:20px;
+  }
+
+.col-b2c{
+  margin-top:50px;
+}
+
+  .c-bottom-footer h6{
+    font-size:9px!important;
+    padding:15px 0!important;
+  }
+
+
 }
 
 
@@ -757,7 +793,18 @@ max-width:622px;
     margin:2em 0 0 0;
   }
 
+  #convectium-blog .c-home-page-blog-query h3{
+    display:block;
+    margin:20px 0 0 0;
+  }
 
+  .as-seen-mobile{
+    display:none!important;
+  }
+
+  .col-b2c, .col-b2b{
+    margin-top:50px;
+  }
 
 }
 
@@ -946,11 +993,16 @@ max-width:622px;
 .single-post article .entry-meta, .blog article .entry-meta{
   width: auto;
   display: inline-block;
-  background: #262626;
-  padding: 3px 8px;
-  color: #fff;
+  /*background: #262626;*/
+  /*padding: 3px 8px;*/
+  color: #000;
+  display:block;
 }
 
+.posted-on, .byline{
+  display:block;
+  text-transform: capitalize;
+}
 
 
 .single-post .entry-title{
@@ -1030,6 +1082,14 @@ font-weight:bold;
   margin-top:20px;
 }
 
+.blog .entry-content{
+  border-bottom:2px solid #ccc;
+  margin-bottom:15px;
+  padding:10px 0 0 0;
+}
+
+
+
 /*SEARCH STYLE*/
 .search-form .screen-reader-text{
   display: none;
@@ -1104,7 +1164,7 @@ background-size: cover;
 }
 
 .page-template-content-contactUs header.masthead{
-  padding:50px 15px 100px 15px!important;
+  padding:50px 0 100px 0!important;
   height:450px;
 }
 
@@ -1158,21 +1218,28 @@ background-size: cover;
 
 .videoWrapper {
   position: relative;
-  padding-bottom: 40.25%; /* 16:9 */
+  padding-bottom: 52.25%; /* 16:9 */
   padding-top: 25px;
-  height: 0;
   min-width:100%;
-  background:#000;
   margin:0 auto;
   display:block;
 }
 .videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
   min-width: 100%;
-  height: 100%;
-  max-width:100%;
+  /*height: 100%;*/
+  /*max-width:100%;*/
+  width: 100vw;
+  height: 104%;
+  min-height: 100%;
+  /*min-width: 101vw;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width:70%;
 }
 
 
@@ -1314,6 +1381,210 @@ background-size: cover;
 
 }
 
+/*LIVE FORM - CONSULTATION PAGE*/
+
+
+#wpcf7-f14472-o1 div{
+  font-weight:bold;
+  color: #525252;
+  width:80%!important;
+  margin:0 auto 20px auto!important;
+
+}
+
+
+
+#wpcf7-f14472-o1 input{
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:2px solid #ccc;
+  width:100%!important;
+  cursor: pointer;
+}
+
+
+#wpcf7-f14472-o1 .how-can-we-help{
+  margin-bottom:20px;
+  display:inline-block;
+}
+
+
+#wpcf7-f14472-o1 textarea{
+  border-left:0;
+  border-right:0;
+  border-top:0;
+  border-bottom:2px solid #ccc;
+  width:100%;
+}
+
+#wpcf7-f14472-o1 select{
+  width:100%;
+  background: transparent;
+  -webkit-border-radius: 0!important;
+  -moz-border-radius: 0!important;
+  border-radius: 0!important;
+  border-left:0;
+  border-right:0;
+  border-top:0;
+  border-bottom: 2px solid #ccc;
+}
+
+.c-contact-info a{
+  font-size:18px;
+  font-weight:bold;
+}
+
+
+.wpcf7-submit{
+  background-color:#43a74c;
+  color:#fff;
+  border-bottom:0!important;
+  padding:10px 20px;
+  text-transform: uppercase;
+  font-weight:bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+}
+
+
+
+
+
+
 .the-post-content{
   margin-top:50px;
+}
+
+
+
+/*POSTED ON*/
+/*.entry-meta .posted-on .updated,*/
+/*.home .posted-on .updated,*/
+/*.post-template-default .posted-on .updated{*/
+  /*display:none!important;*/
+/*}*/
+
+.updated{
+  display:none!important;
+}
+
+.edit-link{
+  display:block;
+}
+
+@media (max-width: 1199px) {
+.home .byline{
+  display:block;
+}
+
+}
+
+
+.search .search-side-bar #search-2{
+  padding:0!Important;
+}
+
+
+.home .wp-post-image{
+  display:none!important;
+}
+
+.blog .entry-content iframe{
+  width:100%!important;
+}
+
+
+/*B2B List*/
+.b2b-list{
+  list-style: none;
+  padding:0;
+
+}
+
+.b2b-list li a{
+  color:#43a74c;
+
+}
+.b2b-list li a:hover{
+  color:#000;
+}
+
+.col-b2b p, .col-b2c p{
+  min-height:100px;
+  font-weight:600!important;
+  color:#4a4646;
+}
+
+
+.featured-article-image{
+  position: relative;
+}
+.featured-article-image .article-image {
+  width: auto;
+  display: inline;
+  vertical-align: middle;
+  padding: 0 2px 0 0;
+  position: absolute;
+  margin-left: 2px;
+  z-index: -200;
+}
+.featured-article-image .featured-in{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.cat-links{
+  display:none!important;
+}
+
+.consumer-services,
+.business-services,
+.b2b-list li a{
+  text-transform: uppercase;
+}
+
+.consumer-services,
+.business-services{
+  font-weight:600;
+}
+
+.wp-paginate .title{
+  display: block;
+}
+
+.wp-paginate.wpp-modern-grey a, .wp-paginate.wpp-modern-grey .current{
+  background:#3e3d3d!important;
+  border: none!important;
+  border-radius: 0!important;
+  color: #43a74c!important;
+  padding: 6px 10px!important;
+}
+
+.post-thumbnail-image{
+  width: 100%;
+  height: 300px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  min-height:300px;
+  margin-bottom:20px;
+}
+
+
+.post-thumbnail-image-2{
+  margin-bottom:20px;
+  width: 100%;
+  display: block;
+}
+
+.post-thumbnail-image img,
+.post-thumbnail-image-2 img{
+
+
 }

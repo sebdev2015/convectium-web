@@ -26,8 +26,8 @@ if ( ! function_exists( 'convectium_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-
-			'<i class="fa fa-calendar" aria-hidden="true"></i> <a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+			esc_html_x( 'Posted on %s', 'post date', 'convectium' ),
+			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
 		$byline = sprintf(
